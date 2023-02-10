@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Robert Jiang's Portfolio Website Contact">
+        <meta name="keywords" content="Robert Jiang, Rob Jiang, Jiang, Software Engineer, Software Developer, SWE, SD, UCSD, Contact">
+        <meta name="author" content="Robert Jiang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Robert Jiang</title>
+        <link rel="icon" href="/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav id="site-nav" aria-label="site">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/resume/">Resume</a></li>
+                    <li id="current"><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <details>
+                    <summary>Connect with me!</summary>
+
+                    <nav id="social-nav" aria-label="social">
+                        <a href="https://github.com/rcjng" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rcjng/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </nav>
+                </details>
+            </div>
+
+            <div>
+                <details>
+                    <summary>Contact me!</summary>
+
+                    <form id="contact" action="TODO" method="post">
+                        <fieldset form="contact">
+                            <legend>Contact Form</legend>
+                        
+                            <div>
+                                <label for="first-name">First Name: </label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            
+                            <div>
+                                <label for="last-name">Last Name: </label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+
+                            <div>
+                                <label for="email">Email: </label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div>
+                                <label for="phone">Phone: </label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div>
+                                <p>Preferred Contact: </p>
+
+                                <input type="radio" id="email-preferred" name="preferred-contact" value="email" checked="checked" required>
+                                <label for="email-preferred">Email</label>
+
+                                <input type="radio" id="phone-preferred" name="preferred-contact" value="phone" required>
+                                <label for="phone-preferred">Phone</label>
+                            </div>
+
+                            <div>
+                                <label>Occupation: </label>
+                                <input list="occupations" name="occupation">
+                                    
+                                <datalist id="occupations">
+                                    <option value="Software Engineer">
+                                    <option value="Technical Program Manager">
+                                    <option value="DevOps Engineer">
+                                    <option value="Site Reliability Engineer">
+                                    <option value="Student">
+                                </datalist>
+                            </div>
+        
+                            <div>
+                                <label for="message">Message: </label>
+                                <textarea name="message" id="message" rows="10" cols="50" maxlength="2000" required></textarea> 
+                            </div>
+        
+                            <div>
+                                <label for="contact_reason">Contact Reason: </label>
+                                <select id="contact_reason" name="contact_reason">
+                                    <optgroup label="General">
+                                        <option value="inquiry">Inquiry</option>
+                                        <option value="comment">Comment</option>
+                                        <option value="connect">Connect</option>
+                                        <option value="recruiting">Recruiting/Opportunity</option>
+                                    </optgroup>
+                                    <optgroup label="Site">
+                                        <option value="feedback">Feedback</option>
+                                        <option value="report">Report Bug/Issue</option>
+                                    </optgroup>                        
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" id="send">Send!</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </details>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Robert Jiang 2023 </p>
+
+            <p><em>Last updated on 01/27/2023</em></p>
+        </footer>
+    </body>
+</html>

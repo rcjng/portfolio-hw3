@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Robert Jiang's Portfolio Website Resume">
+        <meta name="keywords" content="Robert Jiang, Rob Jiang, Jiang, Software Engineer, Software Developer, SWE, SD, UCSD, Resume">
+        <meta name="author" content="Robert Jiang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume | Robert Jiang</title>
+        <link rel="icon" href="/favicon.ico">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="site-nav" aria-label="site">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li id="current"><a href="/resume/">Resume</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1><a href="/documents/pdf/resume.pdf">
+                    <svg width="220" height="20">
+                        <text x="0" y="20" fill="navy" font-size="smaller">Download</text>
+                        <text x="120" y="20" fill="slateblue" font-size="smaller">Resume</text>
+                    </svg>
+                </a>
+            </h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Name Pronunciation</h2>
+
+                <figure id="name-pronunciation">
+                    <figcaption>Raw-bert Jee-ung:</figcaption>
+                    <br>
+                    <audio controls>
+                        <source src="/audios/name_pronunciation.mp3" type="audio/mpeg">
+                        <b>Your browser does not support the audio tag :(.</b>
+                    </audio>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+
+                <dl>
+                    <dt>Languages</dt>
+                    <dd>C#, TypeScript/JavaScript, Go, C/C++, Java, Python, Kotlin, Swift, HTML/CSS, PHP, Ruby, Haskell, SQL, MUMPS</dd>
+                
+                    <dt>Frontend</dt>
+                    <dd>React, Redux, Vue, Angular</dd>
+                
+                    <dt>Backend</dt>
+                    <dd>.NET Core, Node.js, Express, Spring Boot, Flask, Django, Ruby on Rails, Laravel</dd>
+
+                    <dt>Databases</dt>
+                    <dd>Cache, SQLite, MySQL, Microsoft SQL Server, MongoDB, PostgreSQL, Firebase</dd>
+
+                    <dt>Environments</dt>
+                    <dd>Android, iOS, Arduino</dd>
+
+                    <dt>Tools</dt>
+                    <dd>Git, Jira, Postman, Confluence, Gerrit, Jenkins, Coverity</dd>
+
+                    <dt>Techniques</dt>
+                    <dd>REST, Microservices, AJAX, Design Patterns, Object-Oriented Design, Embedded Systems, Functional Programming</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+
+                <table id="experience-table">
+                    <caption>Summary</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Company</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Tenure</th>
+                            <th scope="col">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Werfen</td>
+                            <td>Software Engineer Intern</td>
+                            <td>June 2022 - Present</td>
+                            <td>San Diego, CA</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <template id="experience-row">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                </template>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+
+                <table id="project-table">
+                    <caption>Summary</caption>
+                    <colgroup>
+                        <col span="2" class="general">
+                        <col span="2" class="technical">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Technologies</th>
+                            <th scope="col">Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feather</td>
+                            <td>Android Social Networking App</td>
+                            <td>Java, Android, SQL, Google Nearby Messages API, Room API, Git, ZenHub</td>
+                            <td><a href="https://github.com/CSE-110-Winter-2022/birds-of-a-feather-team-22">GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dynamic Display Settings Switcher (DDSS)</td>
+                            <td>Windows Laptop Utility Program</td>
+                            <td>Python, pywin32, psutil, wmi, threading, pystray</td>
+                            <td><a href="https://github.com/rcjng/dynamic-display-settings-switcher">GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>ServeStore</td>
+                            <td>Command-Line File Hosting Program</td>
+                            <td>Go, gRPC</td>
+                            <td><a href="https://github.com/rcjng/ServeStore">GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>TinyTag</td>
+                            <td>Embedded Tracking Device</td>
+                            <td>C, TinyZero, Arduino, Bluetooth Low Energy, I2C</td>
+                            <td><a href="https://github.com/rcjng/TinyTag">GitHub</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <template id="project-row">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                </template>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                
+                <ol>
+                    <li>UC San Diego - March 2023
+                        <ul>
+                            <li>B.S. Computer Science, 3.85 out of 4.00</li>
+                            <li>Regents Scholar, Provosts Honors, Scholars Society</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>        
+        </main>
+
+        <footer>
+            <p>&copy; Robert Jiang 2023 </p>
+
+            <p><em>Last updated on 01/27/2023</em></p>
+        </footer>
+    </body>
+</html>
