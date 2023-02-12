@@ -1,0 +1,52 @@
+* {
+    /* border: 2px solid; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#site-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+#site-nav ul {
+    display: inline;
+}
+
+#site-nav ul li {
+    display: inline;
+}
+
+#intro {
+    margin: auto;
+    width: 80%;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    justify-items:center;
+    align-items: stretch;
+}
+
+#profile > * {
+    margin: 0.5rem;
+}
+
+#profile-description {
+}
+
+.code-box {
+    border: 1px solid;
+    display: block;
+    height: 6rem;
+}

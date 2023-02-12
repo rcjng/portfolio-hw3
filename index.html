@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | Robert Jiang</title>
         <link rel="icon" href="/favicon.ico">
+        <link rel="stylesheet" href="styles/design.css">
+        <link rel="stylesheet" href="styles/layout.css">
     </head>
     <body>
 
@@ -19,34 +21,36 @@
             </ul>
         </nav>
 
-        <header>
-            <div>
-                <p><b>Source:</b></p>
+        <header id="intro">
+            <h1 id="profile-name">Robert Jiang</h1>
 
-                <p><code>fancy_print('Hello World!')</code></p>
+            <div id="profile">
+                <div id="code-region">
+                    <p class="code-text"><b>Source:</b></p>
 
-                <p><b>Output:</b></p>
+                    <p class="code-box"><code>fancy_print('Hello World!')</code></p>
 
-                <pre>
+                    <p class="code-text"><b>Output:</b></p>
+
+                    <pre class="code-box">
  _   _      _ _        __        __         _     _ _ 
 | | | | ___| | | ___   \ \      / /__  _ __| | __| | |
 | |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _` | |
 |  _  |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|
 |_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)
-               </pre>
+                    </pre>
+                </div>
+
+                <p id="profile-description">I am <mark>Robert (Rob) Jiang</mark>. Welcome to my portfolio, this site has everything you need and should know about me!</p>
+
+                <!-- Art Direction -->
+                <picture id="profile-picture">
+                    <source media="(orientation: landscape)" srcset="/images/profile_picture_landscape.jpg" width="555" height="375">
+                    <source media="(orientation: portrait)" srcset="/images/profile_picture_portrait.jpg" width="300" height="360">
+
+                    <img src="/images/profile_picture_portrait.jpg" alt="Robert Jiang Profile Picture">
+                </picture>
             </div>
-
-            <h1>Robert Jiang</h1>
-
-            <!-- Art Direction -->
-            <picture>
-                <source media="(orientation: landscape)" srcset="/images/profile_picture_landscape.jpg" width="555" height="375">
-                <source media="(orientation: portrait)" srcset="/images/profile_picture_portrait.jpg" width="300" height="360">
-
-                <img src="/images/profile_picture_portrait.jpg" alt="Robert Jiang Profile Picture">
-            </picture>
-
-            <p>I am <span class="highlight">Robert (Rob) Jiang</span>. Welcome to my portfolio, this site has everything you need and should know about me!</p>
         </header>
         
         <main>
