@@ -1,18 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --nav-color: #819496;
+    --nav-background-color: #082B36;
+    --solarized-light-background: #fdf6e4;
+    --solarized-red: #C44720;
+    --solarized-orange: #C38D25;
+    --solarized-green: #8C9D1D;
+    --solarized-blue: #3284D1;
+}
+
 html {
-    font-family : Arial, Helvetica, san-serif;
+    font-family: 'Open Sans', Arial, Helvetica, san-serif;
+    background-color: var(--solarized-light-background);
+    color: var(--solarized-green);
+    overflow-y: scroll;
 }
 
 #site-nav {
-    background-color: teal;
+    background-color: var(--nav-background-color);
+}
+
+#site-nav a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+#site-nav #current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    color: var(--solarized-blue);
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--solarized-red);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+h3 {
+    color: var(--solarized-orange);
+}
+
+#about-me > ul > li {
+    list-style-type: none;
+}
+
+#about-me > ul > li::before {
+    content: "\00BB \20";
+}
+
+#ucsd {
+    border:1px solid MediumBlue;
 }
 
 #profile-name {
-    font-size: 3em;
+    font-size: 3rem;
+    color: var(--solarized-red);
 }
 
-#profile-description-text {
+.code-text {
+    color: var(--solarized-orange);
 }
 
-#profile-description-image {
-    
+mark {
+    color: var(--solarized-blue);
+    font-weight: bold;
+    background: none;
+}
+
+#profile-picture {
+    border-radius: 5%;
+}
+
+footer {
+    color: var(--solarized-blue);
+    font-weight: bold;
 }

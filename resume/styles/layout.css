@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#site-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#site-nav ul {
+    display: inline;
+}
+
+#site-nav ul li {
+    display: inline;
+    padding: 0.5rem;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+/* Header */
+#download-resume > h1 {
+    text-align: right;
+}
+
+svg {
+    width: 225px;
+    height: 25px;
+}
+
+#name-pronunciation > * {
+    margin: auto;
+    text-align: center;
+}
+
+#name-pronunciation figure {
+    padding: 1rem;
+}
+
+#skills > dl {
+    display: table;
+    margin: 0 auto;
+}
+
+thead th {
+    width: 20rem;
+}
+
+main caption {
+    visibility: hidden;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+table {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#education > ol {
+    display: table;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    margin: auto;
+    width: 80%;
+}
+
+footer * {
+    text-align: center;
+}

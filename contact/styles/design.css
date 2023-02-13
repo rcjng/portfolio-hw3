@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --nav-color: #819496;
+    --nav-background-color: #082B36;
+    --solarized-light-background: #fdf6e4;
+    --solarized-red: #C44720;
+    --solarized-orange: #C38D25;
+    --solarized-green: #8C9D1D;
+    --solarized-blue: #3284D1;
+}
+
+html {
+    font-family: 'Open Sans', Arial, Helvetica, san-serif;
+    background-color: var(--solarized-light-background);
+    color: var(--solarized-green);
+    overflow-y: scroll;
+}
+
+#site-nav {
+    background-color: var(--nav-background-color);
+}
+
+#site-nav a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+#site-nav #current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    color: var(--solarized-blue);
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#social-nav i {
+    font-size: 5rem;
+}
+
+details {
+    text-align: center;
+}
+
+details > summary {
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    list-style: none;
+    text-decoration-line: underline;
+}
+
+details[open] > summary {
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    list-style: none;
+    text-decoration-line: none;
+}
+
+#contact fieldset {
+    border: 2px solid var(--solarized-orange);
+}
+
+#contact input {
+    border: 1px solid var(--solarized-green);
+    border-radius: 4px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#contact input:focus {
+    border: 1px solid var(--solarized-blue);
+    border-radius: 4px;
+    outline: none;
+}
+
+#contact textarea {
+    outline-color: var(--solarized-green);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#contact textarea:focus {
+    outline-color: var(--solarized-blue);
+}
+
+#contact legend {
+    color: var(--solarized-red)
+}
+
+#contact label {
+    font-weight: bold;
+    color: var(--solarized-orange)
+}
+
+button {
+    background-color: var(--nav-background-color);
+    border: none;
+    color: var(--nav-color);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    color: var(--solarized-blue);
+    font-weight: bold;
+}
+
+#contact > div {
+    display: none;
+}

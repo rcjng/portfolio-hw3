@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --nav-color: #819496;
+    --nav-background-color: #082B36;
+    --solarized-light-background: #fdf6e4;
+    --solarized-darker-background: #f3e9d1;
+    --solarized-lighter-background: rgb(253, 249, 238);
+    --solarized-red: #C44720;
+    --solarized-orange: #C38D25;
+    --solarized-green: #8C9D1D;
+    --solarized-blue: #3284D1;
+}
+
+html {
+    font-family: 'Open Sans', Arial, Helvetica, san-serif;
+    background-color: var(--solarized-light-background);
+    color: var(--solarized-green);
+    overflow-y: scroll;
+}
+
+#site-nav {
+    background-color: var(--nav-background-color);
+}
+
+#site-nav a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+#site-nav #current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    color: var(--solarized-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--solarized-orange);
+}
+
+#name-pronunciation audio::-webkit-media-controls-panel {
+    background-color: var(--solarized-green);
+}
+
+#skills dl dt {
+    font-weight: bold;
+}
+
+table {
+    border: 2px solid var(--solarized-green);
+    border-collapse: collapse;
+}
+
+thead th {
+    color: var(--solarized-red);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--solarized-darker-background);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: var(--solarized-lighter-background);
+}
+
+table tr td:nth-child(1) {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    color: var(--solarized-blue);
+    font-weight: bold;
+}

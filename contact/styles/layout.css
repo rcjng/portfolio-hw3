@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#site-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+#site-nav ul {
+    display: inline;
+}
+
+#site-nav ul li {
+    display: inline;
+    padding: 0.5rem;
+}
+
+#contact {
+    width: 50%;
+    margin: auto;
+}
+
+#contact input, #contact label, #contact datalist, #contact textarea, #contact select {
+    display: inline-block;
+}
+
+#contact div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 1px;
+}
+
+#contact label {
+    width: 20%;
+}
+
+#contact input, #contact select, #contact textarea {
+    width: 75%;
+    resize: none;
+}
+
+/* Footer */
+footer {
+    margin: auto;
+    width: 80%;
+}
+
+footer * {
+    text-align: center;
+}

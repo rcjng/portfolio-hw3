@@ -15,7 +15,7 @@
 
         <nav id="site-nav" aria-label="site">
             <ul>
-                <li id="current"><a href="/">Home</a></li>
+                <li><a href="/" id="current">Home</a></li>
                 <li><a href="/resume/">Resume</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
@@ -24,7 +24,7 @@
         <header id="intro">
             <h1 id="profile-name">Robert Jiang</h1>
 
-            <div id="profile">
+            <section id="profile">
                 <div id="code-region">
                     <p class="code-text"><b>Source:</b></p>
 
@@ -44,38 +44,34 @@
                 <p id="profile-description">I am <mark>Robert (Rob) Jiang</mark>. Welcome to my portfolio, this site has everything you need and should know about me!</p>
 
                 <!-- Art Direction -->
-                <picture id="profile-picture">
-                    <source media="(orientation: landscape)" srcset="/images/profile_picture_landscape.jpg" width="555" height="375">
-                    <source media="(orientation: portrait)" srcset="/images/profile_picture_portrait.jpg" width="300" height="360">
+                <picture>
+                    <source media="(orientation: landscape)" srcset="/images/profile_picture_landscape.jpg" >
+                    <source media="(orientation: portrait)" srcset="/images/profile_picture_portrait.jpg">
 
-                    <img src="/images/profile_picture_portrait.jpg" alt="Robert Jiang Profile Picture">
+                    <img id="profile-picture" src="/images/profile_picture_portrait.jpg" alt="Robert Jiang Profile Picture">
                 </picture>
-            </div>
+            </section>
         </header>
         
-        <main>
-            <section>
-                <h2>About me!</h2>
-                
+        <main id="main">
+            <h2>About me!</h2>
+
+            <section id="about-me">
                 <h3>I am currently a...</h3>
-                <hr>
-                <p>2023 <strong>B.S. Computer Science</strong> candidate at UC San Diego,</p>
-                <p><strong>Regents Scholar</strong> at UC San Diego (and),</p>
-                <p><strong>Software Engineer Intern</strong> at Werfen!</p>
-                <hr>
+                <ul>
+                    <li>2023 <strong>B.S. Computer Science</strong> candidate at UC San Diego</li>
+                    <li><strong>Regents Scholar</strong> at UC San Diego</li>
+                    <li><strong>Software Engineer Intern</strong> at Werfen</li>
+                </ul>
+            </section>
 
-                <h3>I enjoy...</h3>
-                <hr>
-                <p>playing and watching sports such as football, basketball, swimming, and seasonal activities like skiing in the winter or wakeboarding in the summer,</p>
-                <p>cooking since eating out is not cheap nor healthy (and),</p>
-                <p>learning and exposing myself to new and unfamiliar things such as travelling!</p>
-                <hr>
+            <hr>
 
-                <aside>
-                    <h2>UCSD Campus:</h2>
+            <aside id="ucsd-campus">
 
-                    <canvas id="ucsd" width="300" height="100" style="border:1px solid #0049a8;">
-                        Canvas For UCSD Text.
+                <h2>
+                    <canvas id="ucsd" width="475" height="90">
+                    UC San Diego Campus
                     </canvas>
                     <script>
                         var ucsd = document.getElementById("ucsd");
@@ -88,22 +84,22 @@
                         ucsd_text.font = "bold 45px Trebuchet MS";
                         ucsd_text.fillStyle = "blue";
                         ucsd_text.strokeStyle = gradient;
-                        ucsd_text.strokeText("UC San Diego", 10, 60);
+                        ucsd_text.strokeText("UC San Diego Campus", 10, 60);
                     </script>
+                </h2>
 
-                    <p>Unrelated, but I found some cool videos of <em>UC San Diego</em>'s campus:</p>
-                    <br>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nNqlevTkygM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <br>
-                    <video controls width="560">
-                        <source src="/videos/ucsd_campus.mp4" type="video/mp4">
-                        <b>Your browser does not support the video tag :(.</b>
-                    </video>
-                </aside>
-            </section>
+                <p>Here are some cool videos of <em>UC San Diego</em>'s campus:</p>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nNqlevTkygM" title="UCSD Drone YouTube Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <video controls width="560">
+                    <source src="/videos/ucsd_campus.mp4" type="video/mp4">
+                    <b>Your browser does not support the video tag :(.</b>
+                </video>
+            </aside>
         </main>
 
-        <footer>
+        <footer id="footer">
             <p>&copy; Robert Jiang 2023 </p>
 
             <p><em>Last updated on 01/27/2023</em></p>
