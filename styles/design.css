@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+@keyframes blue-to-red {
+    from {color: var(--solarized-blue)}
+    to {color: var(--solarized-red)}
+}
 :root {
     --nav-color: #819496;
     --nav-background-color: #082B36;
@@ -63,8 +67,9 @@ h3 {
 }
 
 #profile-name {
+    animation-name: blue-to-red;
+    animation-duration: 5s;
     font-size: 3rem;
-    color: var(--solarized-red);
 }
 
 .code-text {

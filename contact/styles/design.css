@@ -104,10 +104,17 @@ button {
     color: var(--nav-color);
     font-weight: bold;
     margin-top: 0.5rem;
-    padding: 10px 24px;
+    padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    transition: padding 0.5s, font-size 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+button:hover {
+    font-size: 1.1rem;
+    padding: 16px 32px;
 }
 
 /* Footer */

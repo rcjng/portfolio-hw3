@@ -43,6 +43,10 @@ a:hover {
     font-weight: bold;
 }
 
+svg:hover {
+    transform: rotateY(180deg);
+}
+
 h2 {
     color: var(--solarized-orange);
 }
