@@ -38,11 +38,11 @@ body {
 }
 
 #contact label {
-    width: 20%;
+    min-width: 20%;
 }
 
 #contact input, #contact select, #contact textarea {
-    width: 75%;
+    width: 65%;
     resize: none;
 }
 
