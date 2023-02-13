@@ -81,6 +81,14 @@ table tr td:nth-child(1) {
     font-weight: bold;
 }
 
+ol > li {
+    font-weight: bold;
+}
+
+ol > li * {
+    font-weight: normal;
+}
+
 /* Footer */
 footer {
     color: var(--solarized-blue);
