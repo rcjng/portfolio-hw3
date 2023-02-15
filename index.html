@@ -24,7 +24,7 @@
         <header id="intro">
             <h1 id="profile-name">Robert Jiang</h1>
 
-            <section id="profile">
+            <div id="profile">
                 <div id="code-region">
                     <p class="code-text"><b>Source:</b></p>
 
@@ -50,7 +50,7 @@
 
                     <img id="profile-picture" src="/images/profile_picture_portrait.jpg" alt="Robert Jiang Profile Picture">
                 </picture>
-            </section>
+            </div>
         </header>
         
         <main id="main">
@@ -68,33 +68,21 @@
             <hr>
 
             <aside id="ucsd-campus">
-
                 <h2>
-                    <canvas id="ucsd" width="475" height="90">
-                    UC San Diego Campus
-                    </canvas>
-                    <script>
-                        var ucsd = document.getElementById("ucsd");
-                        var ucsd_text = ucsd.getContext("2d");
-                        var gradient = ucsd_text.createLinearGradient(1, 4, ucsd.width, 2);
-                        gradient.addColorStop("0", "MidnightBlue");
-                        gradient.addColorStop("0.4", "Blue");
-                        gradient.addColorStop("0.7", "MediumBlue");
-                        gradient.addColorStop("1.0", "SlateBlue");
-                        ucsd_text.font = "bold 45px Trebuchet MS";
-                        ucsd_text.fillStyle = "blue";
-                        ucsd_text.strokeStyle = gradient;
-                        ucsd_text.strokeText("UC San Diego Campus", 10, 60);
-                    </script>
+                    <picture>
+                        <img src="/images/ucsd-text.png" alt="UC San Diego Transparent Text Logo">
+                    </picture>
                 </h2>
-
+                
                 <p>Here are some cool videos of <em>UC San Diego</em>'s campus:</p>
-                <br>
+
+                <!-- width="560" height="315" -->
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nNqlevTkygM" title="UCSD Drone YouTube Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <br>
+
+                <!-- width="560" -->
                 <video controls width="560">
                     <source src="/videos/ucsd_campus.mp4" type="video/mp4">
-                    <b>Your browser does not support the video tag :(.</b>
+                    <b>Your browser does not support the video tag :(</b>
                 </video>
             </aside>
         </main>
@@ -102,7 +90,7 @@
         <footer id="footer">
             <p>&copy; Robert Jiang 2023 </p>
 
-            <p><em>Last updated on 01/27/2023</em></p>
+            <p><em>Last updated on <time datetime="2023-02-14 18:45"></time>02/14/2023</time></em></p>
         </footer>
     </body>
 </html>

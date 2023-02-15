@@ -22,6 +22,12 @@ body {
     padding: 0.5rem;
 }
 
+@media screen and (max-width: 480px) {
+    main, footer {
+        font-size: 0.9rem;
+    }
+}
+
 main h2 {
     text-align: center;
 }

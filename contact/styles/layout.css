@@ -21,9 +21,15 @@ body {
     padding: 0.5rem;
 }
 
+@media screen and (max-width: 480px) {
+    main, footer {
+        font-size: 0.9rem;
+    }
+}
+
 #contact {
-    width: 50%;
     margin: auto;
+    padding: 0 10%;
 }
 
 #contact input, #contact label, #contact datalist, #contact textarea, #contact select {

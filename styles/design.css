@@ -5,6 +5,7 @@
     50% {color: var(--solarized-red)}
     100% {color: var(--solarized-blue)}
 }
+
 :root {
     --nav-color: #819496;
     --nav-background-color: #082B36;
@@ -61,10 +62,6 @@ h3 {
 
 #about-me > ul > li::before {
     content: "\00BB \20";
-}
-
-#ucsd {
-    border:1px solid MediumBlue;
 }
 
 #profile-name {
